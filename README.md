@@ -14,8 +14,7 @@ Versión Ghost 4.41.3
 ### Acceso
 * Usuario: test@test.com
 * Contraseña: 12345678910
-* Ir a la carpeta "cypress" donde se ubica el código para las pruebas 
-* Para ejecutar las pruebas en la terminal se debe ubicar en la raiz del repositorio y desde esta ubicación ejecutar el comando `cypress open`. Esto abrirá una ventana de la herramienta con los features. 
+* Para ejecutar las pruebas en la terminal se debe ubicar en la raiz del repositorio y desde esta ubicación ejecutar el comando `cypress open`. Esto abrirá una ventana de la herramienta con los features a ejecutar
 
 
 ## Integrantes
@@ -47,13 +46,13 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 * Escenario 5: contraseña vacía
 * Escenario 6: correo vacío
 
-### pool de datos pseudo aleatorio
+#### pool de datos pseudo aleatorio
 * Escenario 3: correo incorrecto
 * Escenario 4: ambas credenciales incorrectas
 * Escenario 7: correo con 75 caracteres +1
 
 
-### Generación de datos aleatoria
+#### Generación de datos aleatoria
 * Escenario 2: contraseña incorrecta
 * Escenario 8: contraseña con 500 caracteres +1
 * Escenario 9: correo sin formato de correo
@@ -64,11 +63,11 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 * Escenario 11: valor de la nueva contraseña igual al de la antigua contraseña
 * Escenario 14: contraseña antigua incorrecta
 
-### pool de datos pseudo aleatorio
+#### pool de datos pseudo aleatorio
 * Escenario 10: valor de verificación diferente al de la contraseña nueva
 * Escenario 12: campo nueva contraseña con 10 caracteres -1
 
-### Generación de datos aleatoria
+#### Generación de datos aleatoria
 * Escenario 13: campo nueva contraseña con 500 caracteres +1
 
 ### 2.2 editar datos del perfil
@@ -79,7 +78,7 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 * Escenario 23: ingresar locación
 * Escenario 26: locación con caracteres especiales
 
-### pool de datos pseudo aleatorio
+#### pool de datos pseudo aleatorio
 * Escenario 21: correo sin formato de correo
 * Escenario 22: correo con 75 caracteres +1
 * Escenario 27: ingresar website
@@ -87,7 +86,7 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 * Escenario 29: Ingresar bio
 
 
-### Generación de datos aleatoria
+#### Generación de datos aleatoria
 * Escenario 16: nombre con valores numéricos
 * Escenario 18: nombre con 191 caracteres +1
 * Escenario 19: nombre con 1 letra
