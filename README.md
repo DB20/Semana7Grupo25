@@ -11,7 +11,7 @@ Versión Ghost 4.41.3
 * * Después se puede abrir la aplicación Ghost usando la url http://localhost:2368/ghost para las pruebas en cypress
 * Asegurarse de que la aplicación está en ejecución antes de hacer las pruebas
 
-###Acceso
+### Acceso
 * Usuario: test@test.com
 * Contraseña: 12345678910
 * Ir a la carpeta "cypress" donde se ubica el código para las pruebas 
