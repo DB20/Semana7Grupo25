@@ -139,3 +139,28 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 * Escenario 59: Buscar miembro por nombre numeros
 #### Pool de datos a-priori
 * Escenario 60: Buscar miembro por nombre simbolos
+
+### 6. Páginas
+### 6.1 crear páginas
+#### Pool de datos a-priori
+* escenario 64: Crear una página con titulo que contenga caracteres especiales
+
+#### Generación de datos aleatoria
+* escenario 61: Crear una página con titulo numérico
+* escenario 62: Crear una página con titulo de una sola palabra
+* escenario 63: Crear una página con titulo de una sola letra
+* escenario 65: Crear una página con titulo que contenga más de 255 caracteres 
+* escenario 66: Crear una página con contenido que contenga 1 sola palabra
+* escenario 67: Crear una página con contenido que contenga más de 1000 caracteres
+* escenario 68: Crear una página con contenido que contenga 5 parágrafos
+* escenario 69: Crear una página diligenciando el campo Excerpt con 1 frase
+* escenario 70: Crear una página diligenciando el campo Excerpt con más de 300 caracteres
+
+### 6.2 editar páginas
+#### Generación de datos aleatoria
+* escenario 71: Editar el título de una página
+* escenario 72: Editar el título de una página con más de 255 caracteres
+* escenario 73: Editar el contenido de una página
+* escenario 74: Editar el contenido de una página con más de 100 caracteres
+* escenario 75: Editar el el campo Excerpt
+* escenario 76: Editar el el campo Excerpt con más de 300 caracteres
