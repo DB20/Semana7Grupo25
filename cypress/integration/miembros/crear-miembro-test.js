@@ -52,8 +52,8 @@ describe('Flujo para crear miembro', () => {
 
 
   it("Validar correo no solo simbolos", () => {
-    var correo = "]!}#-+=-@${*(#;:}=}#,+;@,!(,),/:_/_($/((/=:&!){,[%,.]:,//;/!,%!(./-?)(:" + "@gmail.com";
-    var name = "-[-+}{,/{(].#=[;)+/(/=(*!:_;{**})[%{";
+    var correo = Cypress.env("simbolos1") + "@gmail.com";
+    var name = Cypress.env("simbolos2");
     cy.visit(Cypress.env("members"));
     cy.get(".gh-btn-primary").click();
     cy.get("#member-name").click();
@@ -87,8 +87,8 @@ describe('Flujo para crear miembro', () => {
   })
 
   it('Agregar dos veces el mismo tag de simbolos', () =>{
-    var tag1 = "]!}#-+=-@${*(#;:}=}#,+;@,!(,),/:_/_($/((/=:&!){,[%,."
-    var tag2 = "-[-+}{,/{(].#=[;)+/(/=(*!:_;{**})[%{";
+    var tag1 = Cypress.env("simbolos1")
+    var tag2 = Cypress.env("simbolos2");
     cy.visit(Cypress.env("members"));
     cy.get(".gh-btn-primary").click();
     cy.get("#member-name").click();
@@ -109,7 +109,7 @@ describe('Flujo para crear miembro', () => {
     cy.get('.ember-power-select-multiple-options.sortable-objects.ember-view li').then(size=> expect(size.length).to.equal(2))
   })
 
-  it('Agregar dos veces el mismo tag de simbolos', () =>{
+  it('Agregar dos veces el mismo tag de numeros', () =>{
     cy.visit(Cypress.env("members"));
     cy.get(".gh-btn-primary").click();
     cy.get("#member-name").click();
@@ -152,7 +152,7 @@ describe('Flujo para crear miembro', () => {
   })
   
 
-  it('Crear con notas corta', () => {
+  it('Error al crear nota larga', () => {
     var notas = cy.faker.lorem.words(200)
     cy.visit(Cypress.env("members"));
     cy.get(".gh-btn-primary").click();
@@ -193,8 +193,8 @@ describe('Flujo para crear miembro', () => {
     cy.get('textarea').invoke('val').then(text => expect(text).to.equal(notas))
   })
 
-  it('Crear con notas con sinbolos', () => {
-    var notas = "]!}#-+=-@${*(#;:}=}#,+;@,!(,),/:_/_($/((/=:&!){,[%,.]:,//;/!,%!(./-?)(:";
+  it('Crear con notas con simbolos', () => {
+    var notas = Cypress.env("simbolos1");
     cy.visit(Cypress.env("members"));
     cy.get(".gh-btn-primary").click();
     cy.get("#member-name").click();
@@ -237,129 +237,6 @@ describe('Flujo para crear miembro', () => {
     cy.get('.ember-checkbox.ember-view').invoke('val').then(value => expect(value).to.equal('on'))
   });
 
-  it("Buscar miembro por nombre por el inicio", () => {
-    var nameInicio = cy.faker.name.lastName();
-    var nameMedio = cy.faker.name.lastName();
-    var nameFin = cy.faker.name.lastName();
-    var name = nameInicio + "_" + nameMedio + "_" + nameFin
-    cy.visit(Cypress.env("members"));
-    cy.get(".gh-btn-primary").click();
-    cy.get("#member-name").click();
-    cy.get("body").type(name);
-    cy.get("#member-email").click();
-    cy.get("body").type(cy.faker.internet.email());
-    cy.get(".gh-btn-primary").click();
-    cy.wait(1500);
-    cy.visit(Cypress.env("members"));
-    cy.get('.gh-input.gh-members-list-searchfield').type(nameInicio)
-    cy.get('tr a h3').first().invoke('text').then(text => {
-      expect(text).to.equal(name)
-    });
-  })
-
-  it("Buscar miembro por nombre por el medio", () => {
-    var nameInicio = cy.faker.name.lastName();
-    var nameMedio = cy.faker.name.lastName();
-    var nameFin = cy.faker.name.lastName();
-    var name = nameInicio + "_" + nameMedio + "_" + nameFin
-    cy.visit(Cypress.env("members"));
-    cy.get(".gh-btn-primary").click();
-    cy.get("#member-name").click();
-    cy.get("body").type(name);
-    cy.get("#member-email").click();
-    cy.get("body").type(cy.faker.internet.email());
-    cy.get(".gh-btn-primary").click();
-    cy.wait(1500);
-    cy.visit(Cypress.env("members"));
-    cy.get('.gh-input.gh-members-list-searchfield').type(nameMedio)
-    cy.get('tr a h3').first().invoke('text').then(text => {
-      expect(text).to.equal(name)
-    });
-  })
-
-  it("Buscar miembro por nombre por el final", () => {
-    var nameInicio = cy.faker.name.lastName();
-    var nameMedio = cy.faker.name.lastName();
-    var nameFin = cy.faker.name.lastName();
-    var name = nameInicio + "_" + nameMedio + "_" + nameFin
-    cy.visit(Cypress.env("members"));
-    cy.get(".gh-btn-primary").click();
-    cy.get("#member-name").click();
-    cy.get("body").type(name);
-    cy.get("#member-email").click();
-    cy.get("body").type(cy.faker.internet.email());
-    cy.get(".gh-btn-primary").click();
-    cy.wait(1500);
-    cy.visit(Cypress.env("members"));
-    cy.get('.gh-input.gh-members-list-searchfield').type(nameFin)
-    cy.get('tr a h3').first().invoke('text').then(text => {
-      expect(text).to.equal(name)
-    });
-  })
-
-  it("Buscar miembro por correo", () => {
-    var correo = cy.faker.internet.email()
-    cy.visit(Cypress.env("members"));
-    cy.get(".gh-btn-primary").click();
-    cy.get("#member-name").click();
-    cy.get("body").type(cy.faker.internet.userName());
-    cy.get("#member-email").click();
-    cy.get("body").type(correo);
-    cy.get(".gh-btn-primary").click();
-    cy.wait(1500);
-    cy.visit(Cypress.env("members"));
-    cy.get('.gh-input.gh-members-list-searchfield').type(correo)
-    cy.get('tr a p').first().invoke('text').then(text => {
-      expect(text).to.equal(correo)
-    });
-  })
-
-  it("Borrar miembro", () => {
-    cy.visit(Cypress.env("members"));
-    cy.get('tr a h3').first().invoke('text').then(text1 => {
-      cy.get('tr a').first().click()
-      cy.get('.gh-btn.gh-btn-icon.icon-only.gh-btn-action-icon.closed.ember-view').click()
-      cy.get('.mr2 .red').click()
-      cy.wait(500)
-      cy.get('.gh-btn-red').click()
-      cy.get('tr a h3').first().invoke('text').then(text2 => {
-        expect(text1 != text2).to.equal(true)
-      });
-    });
-  })
-
-  it("Buscar miembro por nombre numeros", () => {
-    var nombre = cy.faker.random.numeric(10, { allowLeadingZeros: true })
-    cy.visit(Cypress.env("members"));
-    cy.get(".gh-btn-primary").click();
-    cy.get("#member-name").click();
-    cy.get("body").type(nombre);
-    cy.get("#member-email").click();
-    cy.get("body").type(cy.faker.internet.email());
-    cy.get(".gh-btn-primary").click();
-    cy.wait(1500);
-    cy.visit(Cypress.env("members"));
-    cy.get('.gh-input.gh-members-list-searchfield').type(nombre)
-    cy.get('tr a h3').first().invoke('text').then(text => {
-      expect(text).to.equal(nombre)
-    });
-  })
-
-  it("Buscar miembro por nombre simbolos", () => {
-    var nombre = "-[-+}{,/{(].#=[;)+/(/=(*!:_;{**})[%{";
-    cy.visit(Cypress.env("members"));
-    cy.get(".gh-btn-primary").click();
-    cy.get("#member-name").click();
-    cy.get("body").type(nombre, {parseSpecialCharSequences: false});
-    cy.get("#member-email").click();
-    cy.get("body").type(cy.faker.internet.email());
-    cy.get(".gh-btn-primary").click();
-    cy.wait(1500);
-    cy.visit(Cypress.env("members"));
-    cy.get('.gh-input.gh-members-list-searchfield').type(nombre, {parseSpecialCharSequences: false})
-    cy.get('tr a h3').first().invoke('text').then(text => {
-      expect(text).to.equal(nombre)
-    });
-  })
+  
 
 })
