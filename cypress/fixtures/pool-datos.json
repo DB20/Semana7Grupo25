@@ -1,0 +1,66 @@
+{
+  "credencialesLogin": {
+    "correoLogin": "sg.ramirez940@uniandes.edu.co",
+    "passwordLogin": "UniandesMisw2022"
+  },
+  "nombres": [
+      "Sebastian",
+      "Gonzalo",
+      "María",
+      "Andrea",
+      "Sandra",
+      "Sofía",
+      "Camila",
+      "Valentina",
+      "Juan",
+      "Carlos",
+      "Daniel"
+  ],
+  "caracteresEsp": [
+      "#~¬&%()",
+      "*+-/",
+      "=<>?¿",
+      "¡!¿",
+      ":;+-*/",
+      ".,_!=^*",
+      "&%$)/(",
+      "¿?¡!^",
+      "/*-+&&)))¡!¿",
+      "<<$!&%()"
+
+  ],
+  "correos":[
+      "maria@correo.com",
+      "juan@micorreo.com",
+      "pedroperez@hotmail.com",
+      "carlitos123@micorreo.com",
+      "sofiss@correo.com",
+      "sebas987@hotmail.com",
+      "gonzalorr@micorreo.com",
+      "cami55@correo.com",
+      "pablolopez@micorreo.com"
+  ],
+  "ciudades":[
+      "Bogotá",
+      "Lima",
+      "Quito",
+      "Paris",	
+      "Madrid",
+      "Berlín",
+      "Roma",
+      "Londres",
+      "New York",
+      "Tokio"
+
+  ],
+  "contrasenas":[
+    "pepito12345",
+    "juanito12345",
+    "carlitos12365",
+    "sofia123987",
+    "camila123987",
+    "valentina123"
+
+
+  ]
+}

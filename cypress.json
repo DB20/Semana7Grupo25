@@ -1,1 +1,10 @@
-{}
+{
+    "baseUrl": "http://localhost:2368/ghost/",
+    "env":{
+        "user1": "test@test.com",
+        "pass1": "12345678910",
+        "postPath": "#/posts",
+        "signin": "#/signin",
+        "members": "#/members"
+    }
+}
