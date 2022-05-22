@@ -164,3 +164,20 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 * escenario 74: Editar el contenido de una página con más de 100 caracteres
 * escenario 75: Editar el el campo Excerpt
 * escenario 76: Editar el el campo Excerpt con más de 300 caracteres
+
+### 7. Settings General
+#### Generación de datos aleatoria
+* escenario 77:
+* escenario 78:
+* escenario 79:
+* escenario 80:
+* escenario 81:
+* escenario 82:
+* escenario 83:
+* escenario 84:
+* escenario 85:
+* escenario 86:
+* escenario 87:
+* escenario 88:
+* escenario 89:
+* escenario 90:
