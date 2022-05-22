@@ -79,3 +79,44 @@ Semana7
 * Escenario 24: locación con 250 caracteres +1
 * Escenario 25: locación con valores numéricos
 * Escenario 30: Bio con 200 caracteres +1
+
+### 3. Creacion de post
+### pool de datos pseudo aleatorio
+* Escenario 31: Crear Post exitoso titulo y descripcion
+* Escenario 32: Crear Post exitoso solo titulo
+* Escenario 33: Crear Post exitoso solo descrpcion
+* Escenario 34: Crear Draft exitoso titulo y descripcion
+* Escenario 35: Crear Draft exitoso titulo
+* Escenario 36: Crear Draft exitoso descripcion
+* Escenario 37: Crear post solo numeros
+* Escenario 38: Crear Post exitoso titulo y descripcion y URL
+* Escenario 39: Crear Post error titulo largo
+* Escenario 40: Borrar post exitoso
+### Pool de datos a-priori
+* Escenario 41: Crear post solo caracteres speciales
+
+### 4. Creacion de miembro
+### pool de datos pseudo aleatorio
+* Escenario 42: Crear miembro basic ok
+* Escenario 43: Crear miembro solo numeros ok
+* Escenario 44: Validar correo no solo numeros
+* Escenario 45: Agregar dos veces el mismo tag
+* Escenario 46: Agregar dos veces el mismo tag de numeros
+* Escenario 47: Crear con notas corta
+* Escenario 48: Error al crear nota larga
+* Escenario 49: Crear con notas con numeros
+* Escenario 50: Crear miembro con suscripcion
+### Pool de datos a-priori
+* Escenario 51: Validar correo no solo simbolos
+* Escenario 52: Agregar dos veces el mismo tag de simbolos
+* Escenario 53: Crear con notas con simbolos
+### 5. Buscar miembro
+### pool de datos pseudo aleatorio
+* Escenario 54: Buscar miembro por nombre por el inicio
+* Escenario 55: CBuscar miembro por nombre por el medio
+* Escenario 56: Buscar miembro por nombre por el final
+* Escenario 57: Buscar miembro por correo
+* Escenario 58: Borrar miembro
+* Escenario 59: Buscar miembro por nombre numeros
+### Pool de datos a-priori
+* Escenario 60: Buscar miembro por nombre simbolos
