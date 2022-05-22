@@ -1,8 +1,12 @@
 # Pruebas con generación de datos Semana 7
 
-En la herramienta Cypress se desarrollaron las pruebas. La herramienta faker.js se utilizó para la generación de datos aleatorios. Para las pruebas se usará la siguiente versión de la aplicación Ghost:
+#### IMPORTANTE: Tener en cuenta que ghost no permite más de 100 ingresos en un día, por lo cual se recomienda correr las pruebas en 2 tandas, o ingresar a la base de datos de la aplicación con un gestor (ej: sqlite) y en la tabla "brute" cambiar el 100 por un 1 cuando se completen los 100 ingresos
+
+En la herramienta Cypress se desarrollaron las pruebas. La herramienta faker.js se utilizó para la generación de datos aleatorios. Para las pruebas se usó la siguiente versión de la aplicación Ghost:
 
 Versión Ghost 4.41.3
+
+La descripción de las estrategias de generación de datos para los escenarios se encuentra en la wiki.
 
 ## Instrucciones
 * Para la versión de ghost que se desea ejecutar se puede instalar docker en su sistema operativo (https://docs.docker.com/engine/install/)
