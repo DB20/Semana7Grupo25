@@ -132,8 +132,8 @@ describe("Flujo basico para crear un post", () => {
   })
 
   it('Crear post solo caracteres speciales', () =>{
-    var title = "]!}#-+=-@${*(#;:}=}#,+;@,!(,),*/:_/_($/((/=:&!){,[%,.]:,//;/!,%!(./-?)(:";
-    var description = "-[-+}{,/{(].#=[;)+/(/=(*!:_;{**})[%{+++;?+//{-;)#}]:%&[@@+/$![.-/@=&}[-@*;/";
+    var title = Cypress.env("simbolos1");
+    var description = Cypress.env("simbolos2");
     cy.visit(Cypress.env("postPath"));
     cy.get("li.gh-posts-list-item").then((before) => {
       cy.get(".gh-nav-new-post").click();
