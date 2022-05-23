@@ -184,6 +184,7 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 
 ### 8. Tag
 ### 8.1 Crear Tag
+#### Generación de datos aleatoria
 * escenario 91: Color RGB con valores numéricos 
 * escenario 92: Color RGB con valores alfanuméricos con menos de 6 dígitos
 * escenario 93: Color RGB con valores alfanuméricos con menos de 7 dígitos
@@ -209,6 +210,7 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 
 
 ### 8.1 Editar Tag:
+#### Pool de datos a-priori
 * escenario 113: Editar Tag – Nombre agregando Valores Alfanuméricos
 * escenario 114: Editar Tag – Cambiar descripción
 * escenario 115: Editar Tag – Cambiar Color RGB con valores correspondientes
