@@ -1,1 +1,17 @@
-{}
+{
+    "baseUrl": "http://localhost:2368/ghost/",
+    "env":{
+        "user1": "test@test.com",
+        "pass1": "12345678910",
+        "postPath": "#/posts",
+        "signin": "#/signin",
+        "members": "#/members",
+        "simbolos1": "]!}#-+=-@${*(#;:}=}#,+;@,!(,),*/:_/_($/((/=:&!){,[%,.]:,//;/!,%!(./-?)(:",
+        "simbolos2": "-[-+}{,/{(].#=[;)+/(/=(*!:_;{**})[%{+++;?+//{-;)#}]:%&[@@+/$![.-/@=&}[-@*;/",
+        "RGB":"AAFFAA",
+        "RGBsimbolos":"A$·&A7",
+        "alfanumerico":"alskdf(/&(/&3457309",
+        "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate velit quis porta ultricies. Etiam porttitor massa nec cursus egestas. Ut eget nisi ac ex vestibulum bibendum. Phasellus venenatis, nisl eu efficitur egesta"
+
+    }
+}
