@@ -21,11 +21,8 @@
     "cypress": "^9.6.1"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@faker-js/faker": "^6.3.1"
-=======
     "@faker-js/faker": "^6.3.1",
-    "cypress-xpath": "^1.6.2"
->>>>>>> Post
+    "cypress-xpath": "^1.6.2",
+    "cypress-plugin-tab": "^1.0.5"
   }
 }
