@@ -2,7 +2,7 @@
 describe('Feature: Crear Post', () => {
 
     beforeEach(() => {
-        cy.visit('http://localhost:3001/ghost/#/signin')
+        cy.visit('http://localhost:2368/ghost/#/signin')
         cy.wait(5000)
   
         cy.get('form').within(() => {

@@ -2,7 +2,7 @@ import {faker} from '@faker-js/faker'
 describe('Feature: editar tag', () => {
 
   beforeEach(() => {
-      cy.visit('http://localhost:3001/ghost/#/signin')
+      cy.visit('http://localhost:2368/ghost/#/signin')
       cy.wait(3000)
 
       cy.get('form').within(() => {
