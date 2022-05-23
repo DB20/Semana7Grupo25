@@ -168,20 +168,22 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 
 ### 7. Settings General
 #### Generación de datos aleatoria
-* escenario 77:
-* escenario 78:
-* escenario 79:
-* escenario 80:
-* escenario 81:
-* escenario 82:
-* escenario 83:
-* escenario 84:
-* escenario 85:
-* escenario 86:
-* escenario 87:
-* escenario 88:
-* escenario 89:
-* escenario 90:
+* escenario 77: Editar el Title en el campo Title & description
+* escenario 78: Editar el Title en el campo Title & description con más de 200 caracteres (genera error ya que no guarda porque el titulo es muy largo)
+* escenario 79: Editar el Title en el campo Title & description con números
+* escenario 80: Editar la descripción en el campo Title & description
+* escenario 81: Editar la descripción en el campo Title & description con números
+* escenario 82: Editar la descripción en el campo Title & description con más de 200 caracteres (genera error ya que no guarda porque el titulo es muy largo)
+* escenario 83: Editar el idioma en el campo Publication Language (se deja poner una palabra como lenguaje)
+* escenario 84: Editar el idioma en el campo Publication Language con números
+* escenario 85: Editar el idioma en el campo Publication Language con más de 50 caracteres
+
+#### Pool de datos a-priori
+* escenario 86: Editar el Meta title en el campo Meta data
+* escenario 87: Editar el Meta title en el campo Meta data con números
+* escenario 88: Editar el Meta title en el campo Meta data con más de 70 caracteres
+* escenario 89: Editar la Meta description en el campo Meta data
+* escenario 90: ditar la Meta description en el campo Meta data con numeros
 
 ### 8. Tag
 ### 8.1 Crear Tag
