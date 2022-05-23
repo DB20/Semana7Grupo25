@@ -18,5 +18,10 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+<<<<<<< HEAD
 
 cy.faker = require('@faker-js/faker').faker;
+=======
+require('cypress-xpath')
+
+>>>>>>> Post
