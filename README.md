@@ -1,6 +1,6 @@
 # Pruebas con generación de datos Semana 7
 
-#### IMPORTANTE: Tener en cuenta que ghost no permite más de 100 ingresos en un día, por lo cual se recomienda correr las pruebas en 2 tandas, o ingresar a la base de datos de la aplicación con un gestor (ej: sqlite) y en la tabla "brute" cambiar el 100 por un 1 cuando se completen los 100 ingresos
+#### IMPORTANTE: Tener en cuenta que ghost no permite más de 100 ingresos en un día, por lo cual se recomienda correr las pruebas en 2 tandas en días diferentes, o ingresar a la base de datos de la aplicación con un gestor (ej: sqlite) y en la tabla "brute" cambiar el 100 por un 1 cuando se completen los 100 ingresos
 
 En la herramienta Cypress se desarrollaron las pruebas. La herramienta faker.js se utilizó para la generación de datos aleatorios. Para las pruebas se usó la siguiente versión de la aplicación Ghost:
 
