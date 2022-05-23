@@ -181,3 +181,41 @@ Varias de las incidencias encontradas se añadieron al registro de incidencias J
 * escenario 88:
 * escenario 89:
 * escenario 90:
+
+### 8. Tag
+### 8.1 Crear Tag
+* escenario 91: Color RGB con valores numéricos 
+* escenario 92: Color RGB con valores alfanuméricos con menos de 6 dígitos
+* escenario 93: Color RGB con valores alfanuméricos con menos de 7 dígitos
+* escenario 94: Color RGB con valores de caracteres especiales
+* escenario 95: Valor de Slug con espacios debería de fallar y no ser admitido
+* escenario 96: Descripción con valores alfanuméricos de 500 caracteres
+* escenario 97: Descripción con valores alfanuméricos de 501 caracteres
+* escenario 98: Meta data del Tag, meta title 299 caracteres
+* escenario 99: Meta data del Tag, meta title 301 caracteres
+* escenario 100: Meta description 500 catacteres
+* escenario 101: Meta description 501 catacteres
+* escenario 102: Canonical URl con dirección url
+* escenario 103: Canonical URL con valores alfanuméricos
+* escenario 104: Twitter title con valores alfanuméricos de 300 caracteres
+* escenario 105: Twitter title con valores alfanuméricos de 301 caracteres
+* escenario 106: Twitter Description con valores alfanuméricos de 500 caracteres
+* escenario 107: Twitter Description con valores alfanuméricos de 501 caracteres
+* escenario 108: Facebook title con valores alfanuméricos de 300 caracteres
+* escenario 109: Facebook title con valores alfanuméricos de 301 caracteres
+* escenario 110: Facebook Description con valores alfanuméricos de 501 caracteres
+* escenario 111: Facebook Description con valores alfanuméricos de 500 caracteres
+* escenario 112: Code Inyection valores alfanuméricos
+
+
+### 8.1 Editar Tag:
+* escenario 113: Editar Tag – Nombre agregando Valores Alfanuméricos
+* escenario 114: Editar Tag – Cambiar descripción
+* escenario 115: Editar Tag – Cambiar Color RGB con valores correspondientes
+* escenario 116: Editar Tag – Cambiar Color RGB con simbolos
+* escenario 117: Editar Tag – URL de Canonical URL sin formato URL
+* escenario 118: Editar Tag – Titulo Meta agregando valores numéricos
+* escenario 119: Editar Tag – título de Twitter con más de 300 caracteres
+* escenario 120: Editar Tag – Cambiar Slug a uno con espacios
+
+
