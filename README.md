@@ -13,6 +13,7 @@ La descripción de las estrategias de generación de datos para los escenarios s
 * * Una vez se tenga docker instalado, en una terminal se debe ejecutar el siguiente comando para la versión 4.41.3 de Ghost: 
 * * `docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_4.41.3 ghost:4.41.3`
 * * Después se puede abrir la aplicación Ghost usando la url http://localhost:2368/ghost para las pruebas en cypress
+*  Para el correcto funcionamiento es necesario instalar la extensión xpath para cypress (npm install -D cypress-xpath)
 * Asegurarse de que la aplicación está en ejecución antes de hacer las pruebas
 
 ### Acceso
